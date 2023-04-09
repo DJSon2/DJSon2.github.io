@@ -1,18 +1,35 @@
 ---
 layout: single
-title: "MVC architecture pattern"
+title: "Spring MVC"
 ---
-# MVC 패턴에 대하여
+
+
+# Spring MVC 대하여
+
+Spring MVC는 Spring 프레임워크에서 제공하는 웹 애플리케이션 개발용 모듈 중 하나로, 웹 애플리케이션을 개발할 때 MVC 패턴을 사용한다. 즉, Spring MVC는 MVC 패턴을 기반으로 하는 웹 애플리케이션 개발용 모듈이라고 할 수 있다.
+
+Spring MVC에서는 MVC 패턴의 각 구성 요소를 다음과 같은 클래스로 구현한다.
+
+1. Model: 데이터와 비즈니스 로직을 처리하는 클래스, 보통은 POJO(Plain Old Java Object) 클래스로 구현한다.
+
+2. View: 사용자 인터페이스를 처리하는 클래스, JSP(JavaServer Pages)나 Thymeleaf 등의 템플릿 엔진을 사용하여 구현한다.
+
+3. Controller: 사용자 입력을 처리하고 Model과 View를 연결하는 클래스, 보통은 @Controller 어노테이션을 사용하여 구현한다.
+
+Spring MVC는 MVC 패턴을 사용하므로, 비즈니스 로직은 Model에서 처리하고, Controller에서는 Model과 View를 연결하고 사용자 입력을 처리한다. 따라서 Spring MVC에서도 MVC 패턴에서와 같이 각 구성 요소의 역할이 분리되어 있으며, 유지보수성과 코드 가독성을 높일 수 있다.
+
 ##  MVC(Model-View-Controller) 구조를 쓰는 이유
 1. 관심사의 분리: MVC 패턴은 데이터 모델, 사용자 인터페이스 및 제어 논리를 명확하게 분리하여 애플리케이션을 보다 쉽게 유지 관리하고 확장할 수 있도록 하기 위해서
 2. 재사용성: MVC 구조의 다양한 구성 요소를 다른 애플리케이션에서 재사용 할 수 있으므로 개발 시간과 노력이 줄어든다.
 3. 유연성: MVC 패턴을 사용하면 다른 구성 요소에 영향을 주지 않고 Model, View 또는 Controller를 변경할 수 있으므로 보다 쉽게 유지 관리하고 업데이트하기 좋다.
 4. 테스트 용이성: MVC 패턴을 사용하면 Model, View 또는 Controller와 같은 개별 구성 요소를 더 쉽게 테스트 할 수 있다. 즉, 어느곳에서 오류가 나는지 파악하기 쉬우며 보다 효율적으로 수정할 수 있다.
-이외에도 몇가지 장점이 있으며 전반적으로 MVC 패턴은 코드 및 데이터 구성을 위한 명확한 구조를 제공하여 SW 프로그램을 더 쉽게 개발, 유지 관리 및 업데이트할 수 있기 때문에 소프트웨어 개발의 모범사례로 인식됩니다.
+이외에도 몇가지 장점이 있으며 전반적으로 MVC 패턴은 코드 및 데이터 구성을 위한 명확한 구조를 제공하여 SW 프로그램을 더 쉽게 개발, 유지 관리 및 업데이트할 수 있기 때문에 소프트웨어 개발의 모범사례로 인식된다.
+
+
 ## MVC 패턴에서의 간단한 용어 설명
 ### Controller, Dto, Entity, Repsitory, Service
 <img width="863" alt="image" src="https://user-images.githubusercontent.com/124123956/216931074-ff6eaf83-07a3-4bf0-9f05-b6e8615b114c.png">
-###### 해당 그림의 React부분은 View의 역할로써 React가 아닌 다른 것으로 대체 가능하다.
+###### 해당 그림의 경우 진행했던 프로젝트의 실행 구조이며, 전체적인 구조는 달라질 수 있다.
 
 * Controller: Controller는 Model과 View 사이의 중개자 역할로 사용자 입력을 처리하고 그에 따라 Model을 업데이트하며 Model에서 View로 데이터를 전달하여 최종 출력을 렌더링합니다.
   * 즉, 사용자의 요청을 받고 요청에 맞춰 처리가 된 후 다시 내보내는, 업데이트하는 역할을 해주는 것이다.
