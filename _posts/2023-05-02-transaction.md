@@ -1,3 +1,9 @@
+---
+layout: single
+title: "Transaction"
+---
+
+
 # Transaction(트랜잭션)이란?
 하나의 논리적인 작업 단위를 의미한다. 
 즉, 하나의 작업을 수행할 때 다른 작업이 개입되지 않게 보장되는 것이다.
