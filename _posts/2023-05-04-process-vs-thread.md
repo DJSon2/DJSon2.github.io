@@ -30,9 +30,10 @@ title: "Process vs Thread"
     * 프로세스의 자원을 공유하여 사용
 
 
+참고 사이트
+* https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/lang/Thread.html
 
-
-
+* https://mangkyu.tistory.com/92
 
 
 
