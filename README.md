@@ -13,8 +13,8 @@ https://djson2.github.io/
 
 ## 참여했던 프로젝트 
 * ERP 프로그램 (인사팀 관련 기능 구현)
-  * https://github.com/DJSon2/mi-project-backend
-  * https://github.com/DJSon2/mi-repository-frontend
+  * https://github.com/DJSon2/mi-project-backend (Spring Boot)
+  * https://github.com/DJSon2/mi-repository-frontend (React)
 * 상담형 웹 서비스(지도 API 사용)
   *  https://github.com/DJSon2/im-ground-repository
 * Tymeleaf를 이용한 HR팀 기능 구현(공공 API 추가 사용)
