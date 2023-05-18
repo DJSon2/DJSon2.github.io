@@ -19,3 +19,5 @@ https://djson2.github.io/
   *  https://github.com/DJSon2/im-ground-repository
 * Tymeleaf를 이용한 HR팀 기능 구현(공공 API 추가 사용)
   * https://github.com/DJSon2/EcoAndRich
+* 연관 게시물 추천 기능
+  * https://github.com/DJSon2/DJ_Board
