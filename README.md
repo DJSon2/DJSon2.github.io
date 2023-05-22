@@ -1,5 +1,8 @@
 # DJ 개발 블로그
 
+# 메인 저장소를 새로 개설하여 정리했습니다.
+https://github.com/DJSon2/about-me/blob/main/README.md
+
 ## 블로그 주소
 https://djson2.github.io/
 
