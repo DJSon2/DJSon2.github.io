@@ -1,3 +1,8 @@
+---
+layout: single
+title: "Dijkstra algorithm and A* algorithm"
+---
+
 # 다익스트라 알고리즘(Dijkstra)
 1. 다익스트라 알고리즘이란?
     - 다익스트라 알고리즘은 다이나믹 프로그래밍을 활용한 대표적인 최단 경로(Shortest Path) 탐색 알고리즘이다.
