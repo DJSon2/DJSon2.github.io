@@ -9,19 +9,19 @@ title: "Alogorithm and DB"
     - 예시 답안
     ```
     SELECT 
-        name,
-        score
-    FROM Students
-    WHERE score >= 90;
+           name
+        ,  score
+      FROM Students
+     WHERE score >= 90;
     ```
 
 2. 쿼리 최적화 문제 :
     - 다음 쿼리를 실행하는데 가장 효율적인 방법을 선택하세요.(인덱스가 "date" 열에 존재한다고 가정)
     ```
     SELECT 
-        *
-    FROM Orders
-    WHERE date BETWEEN '2023-01-01' AND '2023-07-01';
+          *
+      FROM Orders
+     WHERE date BETWEEN '2023-01-01' AND '2023-07-01';
     ```
     - 예시 답안
         - 주어진 쿼리는 'date'열에 인덱스가 있으므로 인덱스 스캔을 통해 효율적으로 처리될 수 있다.
